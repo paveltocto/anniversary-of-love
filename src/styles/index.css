@@ -135,31 +135,6 @@
     }
 }
 
-
-/*@utility animation-delay-none {*/
-/*    animation-delay: 0s;*/
-/*}*/
-/*@utility animation-delay-inherit {*/
-/*    animation-delay: inherit;*/
-/*}*/
-/*@utility animation-delay-initial {*/
-/*    animation-delay: initial;*/
-/*}*/
-/*@utility animation-delay-revert {*/
-/*    animation-delay: revert;*/
-/*}*/
-/*@utility animation-delay-revert-layer {*/
-/*    animation-delay: revert-layer;*/
-/*}*/
-/*@utility animation-delay-unset {*/
-/*    animation-delay: unset;*/
-/*}*/
-/*@utility animation-delay-* {*/
-/*    !*animation-delay: --value([*]);*!*/
-/*    animation-delay: calc(--value(integer) * 1ms);*/
-/*}*/
-
-
 * {
     margin: 0;
     padding: 0;
@@ -171,48 +146,6 @@ body {
     background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-light) 100%);
     @apply font-normal leading-[1.7] text-cream min-h-screen relative overflow-x-hidden;
 }
-
-/*!* Custom keyframes for animations *!*/
-/*@keyframes fall {*/
-/*  0% {*/
-/*    transform: translateY(-50px) rotate(0deg);*/
-/*    opacity: 0;*/
-/*  }*/
-/*  10% {*/
-/*    opacity: 1;*/
-/*  }*/
-/*  90% {*/
-/*    opacity: 0.7;*/
-/*  }*/
-/*  100% {*/
-/*    transform: translateY(100vh) rotate(360deg);*/
-/*    opacity: 0;*/
-/*  }*/
-/*}*/
-
-/*@keyframes float {*/
-/*  0% {*/
-/*    transform: translateY(-100px) rotate(0deg);*/
-/*    opacity: 0.8;*/
-/*  }*/
-/*  100% {*/
-/*    transform: translateY(100vh) rotate(720deg);*/
-/*    opacity: 0;*/
-/*  }*/
-/*}*/
-
-/*@keyframes fadeIn {*/
-/*  from { opacity: 0; }*/
-/*  to { opacity: 1; }*/
-/*}*/
-
-/*!* Custom utilities *!*/
-/*@layer utilities {*/
-/*  .bg-gradient-radial {*/
-/*    background: radial-gradient(circle at center, var(--tw-gradient-from), var(--tw-gradient-to));*/
-/*  }*/
-/*}*/
-
 
 .container {
     @apply max-w-full w-full relative z-10;
@@ -371,13 +304,14 @@ h1 {
 }
 
 .modal-hearts {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 1005;
+    @apply absolute top-0 left-0 w-full h-full z-[1005] pointer-events-none;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*pointer-events: none;*/
+    /*z-index: 1005;*/
 }
 
 .modal-content {
@@ -392,7 +326,7 @@ h1 {
     box-shadow: 0 30px 80px rgba(255, 143, 171, 0.4);
     padding: 60px 40px;
     text-align: center;
-    animation: scaleIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: scale-in 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     z-index: 1010;
 }
 
