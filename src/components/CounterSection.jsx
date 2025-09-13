@@ -51,14 +51,7 @@ const CounterSection = () => {
 
       <div className="counter-container">
         {counterItems.map((item, index) => (
-          <div
-            key={index}
-            className="counter-item"
-            style={{
-              animationDelay: `${(index + 1) * 0.1}s`,
-              animationFillMode: 'forwards',
-            }}
-          >
+          <div key={index} className="counter-item">
             <div className="counter-value">{item.value}</div>
             <div className="counter-label">{item.label}</div>
           </div>
