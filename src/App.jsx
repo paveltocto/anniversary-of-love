@@ -1,4 +1,4 @@
-import {useRef, useState} from 'react'
+import { useRef, useState } from 'react'
 import Decorations from './components/Decorations'
 import Header from './components/Header'
 import CounterSection from './components/CounterSection'
@@ -20,7 +20,7 @@ function App() {
   const handleScrollDown = () => {
     if (counterSectionRef.current) {
       counterSectionRef.current.scrollIntoView({
-        behavior: 'smooth'
+        behavior: 'smooth',
       })
     }
   }
@@ -42,10 +42,7 @@ function App() {
         <Signature />
       </div>
 
-      <Modal
-        isOpen={isModalOpen}
-        onClose={handleCloseModal}
-      />
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
     </>
   )
 }

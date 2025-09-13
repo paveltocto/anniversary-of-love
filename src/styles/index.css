@@ -229,22 +229,22 @@ h1 {
 .btn-surprise {
     @apply
         /* Typography */
-        font-sans font-medium tracking-[3px] uppercase text-[clamp(1.5rem,3vw,2rem)]
+    font-sans font-medium tracking-[3px] uppercase text-[clamp(1.5rem,3vw,2rem)]
         /* Spacing */
-        px-[50px] py-[20px]
+    px-[50px] py-[20px]
         /* Border */
-        rounded-[50px] border-2 border-pink-light
+    rounded-[50px] border-2 border-pink-light
         /* Colors / Background */
-        bg-cream relative z-20 overflow-hidden
+    bg-cream relative z-20 overflow-hidden
         /* Effects */
-        cursor-pointer [transition:all_0.5s_ease] [box-shadow:0_10px_30px_rgba(0,_0,_0,_0.4)]
+    cursor-pointer transition-[all_0.5s_ease] shadow-[0_10px_30px_rgba(0,_0,_0,_0.4)]
         /* Hover */
-        hover:-translate-y-[5px] hover:scale-105 hover:[box-shadow:0_15px_40px_rgba(157,_78,_221,_0.6)] hover:bg-[linear-gradient(45deg,_var(--color-purple-dark),_var(--color-purple))]
+    hover:-translate-y-[5px] hover:scale-105 hover:[box-shadow:0_15px_40px_rgba(157,_78,_221,_0.6)] hover:bg-[linear-gradient(45deg,_var(--color-purple-dark),_var(--color-purple))]
         /* After */
-        after:content-[''] after:absolute after:-top-2/4 after:-left-3/5 after:w-[30px] after:h-[200%] after:bg-[rgba(255,_255,_255,_0.3)] after:rotate-[25deg] after:[transition:all_0.6s]
+    after:content-[''] after:absolute after:-top-2/4 after:-left-3/5 after:w-[30px] after:h-[200%] after:bg-[rgba(255,_255,_255,_0.3)] after:rotate-[25deg] after:[transition:all_0.6s]
         /* Hover After */
-        hover:after:left-[120%];
-    background: linear-gradient(45deg, var(--color-purple), var(--color-purple-dark));
+    hover:after:left-[120%];
+    background: linear-gradient(45deg,var(--color-purple),var(--color-purple-dark));
 }
 
 .decoration-heart {
@@ -258,11 +258,11 @@ h1 {
     [box-shadow:0_0_10px_rgba(199,_125,_255,_0.4)];
 }
 
-.counter-section{
+.counter-section {
     @apply py-25 px-5 bg-dark-light/70 border-2 border-purple/30 shadow-2xl w-full m-0;
 }
 
-.counter-title{
+.counter-title {
     @apply
     font-serif text-[clamp(2.8rem,6vw,4.5rem)]
     text-pink-light text-center mb-18 relative tracking-wide p-0 animate-fade-down
@@ -272,7 +272,7 @@ h1 {
     after:bg-[linear-gradient(90deg,_transparent,_var(--color-pink-light),_transparent)] ;
 }
 
-.counter-container{
+.counter-container {
     @apply
     grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] gap-[25px]
     w-full max-w-[800px]
@@ -292,9 +292,17 @@ h1 {
     animation-fill-mode: forwards;
 }
 
-.counter-item:nth-child(1) { animation: fade-up 0.8s 0.1s ease-out forwards; }
-.counter-item:nth-child(2) { animation: fade-up 0.8s 0.2s ease-out forwards; }
-.counter-item:nth-child(3) { animation: fade-up 0.8s 0.3s ease-out forwards; }
+.counter-item:nth-child(1) {
+    animation: fade-up 0.8s 0.1s ease-out forwards;
+}
+
+.counter-item:nth-child(2) {
+    animation: fade-up 0.8s 0.2s ease-out forwards;
+}
+
+.counter-item:nth-child(3) {
+    animation: fade-up 0.8s 0.3s ease-out forwards;
+}
 
 .counter-item:hover {
     transform: translateY(-15px) scale(1.03);
@@ -322,7 +330,7 @@ h1 {
     opacity: 0.85;
 }
 
-.time-display{
+.time-display {
     margin-top: 70px;
     text-align: center;
     font-size: clamp(1.8rem, 4vw, 2.3rem);
@@ -356,7 +364,6 @@ h1 {
     opacity: 0;
     animation: fade-up 0.8s 0.8s ease-out forwards;
 }
-
 
 
 .modal {

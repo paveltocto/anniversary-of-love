@@ -38,16 +38,19 @@ src/
 ## 🛠️ Instalación y Uso
 
 1. **Instalar dependencias:**
+
    ```bash
    npm install
    ```
 
 2. **Ejecutar en modo desarrollo:**
+
    ```bash
    npm run dev
    ```
 
 3. **Construir para producción:**
+
    ```bash
    npm run build
    ```
@@ -90,6 +93,7 @@ Comparado con la versión original:
 ## 📱 Responsive Design
 
 La aplicación está optimizada para:
+
 - 📱 Móviles (320px+)
 - 📱 Tablets (768px+)
 - 💻 Desktop (1024px+)
@@ -97,4 +101,4 @@ La aplicación está optimizada para:
 
 ---
 
-*Hecho con ❤️ para celebrar el amor*
+_Hecho con ❤️ para celebrar el amor_

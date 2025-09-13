@@ -3,7 +3,7 @@ const Signature = () => {
     <div className="signature" style={{ animationFillMode: 'forwards' }}>
       Con todo mi amor, hoy y siempre
     </div>
-  );
-};
+  )
+}
 
-export default Signature;
+export default Signature
