@@ -76,7 +76,12 @@ const Modal = ({ isOpen, onClose }) => {
           de amor, de sonrisas y de sueños compartidos. Hoy y siempre, quiero
           recordarte que mi corazón te pertenece por completo.
         </p>
-
+        <iframe
+          src="https://www.canva.com/design/DAGy3mewY04/E4cs3soLUvgmFjGAlDt4Iw/watch?embed"
+          frameBorder="0"
+          allowFullScreen
+          className="aspect-video"
+        ></iframe>
         {/* Signature */}
         <div className="signature">Por siempre tuyo</div>
       </div>
